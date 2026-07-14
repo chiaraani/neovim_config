@@ -10,7 +10,7 @@ return {
     lazy = false, -- neo-tree will lazily load itself
     config = function()
       vim.keymap.set('n', '<leader>e', function()
-        vim.cmd(":Neotree")
+        vim.cmd(":Neotree toggle reveal left")
       end)
     end
   }
