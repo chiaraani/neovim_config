@@ -5,6 +5,7 @@
   "mini.icons": { "branch": "main", "commit": "98faae31e9be1cc054ae63485e58ceb185efcad0" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "ebd66767191714e008ce73b769518a763ff31bdc" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
+  "nvim-lspconfig": { "branch": "master", "commit": "d5b6e3db4c17b0146f63a2fc47e2027a754b2cb1" },
   "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
   "nvim-web-devicons": { "branch": "master", "commit": "0ca28b61a04fe7426cefbdd52c2647ef0e335b5f" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
