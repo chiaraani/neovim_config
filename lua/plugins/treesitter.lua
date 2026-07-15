@@ -5,10 +5,15 @@ return {
     build = ':TSUpdate',
     config = function()
       local config = require("nvim-treesitter.config")
-      local preferred_langs = { "lua", "javascript", "html", "css", "ruby", "vue", "vimdoc", "vim" }
+      local preferred_langs = {
+        "lua", "javascript", "html", "css", "ruby", "vue", "vimdoc", "vim", "json", "sql"
+      }
       config.setup({
         ensure_installed = preferred_langs,
-        highlight = { enable = true },
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlighting = false
+        },
         indent = { enable = true }
       })
 
