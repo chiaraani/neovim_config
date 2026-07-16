@@ -6,7 +6,7 @@ return {
     config = function()
       local config = require("nvim-treesitter.config")
       local preferred_langs = {
-        "lua", "javascript", "html", "css", "ruby", "vue", "vimdoc", "vim", "json", "sql"
+        "lua", "javascript", "html", "css", "ruby", "vue", "vimdoc", "vim", "sql"
       }
       config.setup({
         ensure_installed = preferred_langs,
