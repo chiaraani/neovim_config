@@ -1,4 +1,17 @@
 -- LSP
+-- Semantic icons
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '✘',
+      [vim.diagnostic.severity.WARN] = '▲',
+      [vim.diagnostic.severity.HINT] = '⚑',
+      [vim.diagnostic.severity.INFO] = '»',
+    },
+  },
+})
+
+
 -- Format on save
 local fmt_group = vim.api.nvim_create_augroup('autoformat_cmds', { clear = true })
 
