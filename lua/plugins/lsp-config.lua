@@ -13,7 +13,7 @@ return {
       vim.lsp.enable('vue_ls')
       vim.lsp.enable('yamlls')
       vim.lsp.enable('solargraph')
-      vim.lsp.enable('rubocop')
+      -- vim.lsp.enable('rubocop')
       vim.lsp.enable('vimls')
       vim.lsp.enable('lua_ls')
       vim.lsp.config("lua_ls", {
