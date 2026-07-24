@@ -7,7 +7,7 @@ return {
       local config = require("nvim-treesitter.config")
       local langs = {
         "lua", "html", "css", "ruby", "vue", "vimdoc", "vim", "sql",
-        "json", "javascript", "yaml"
+        "json", "javascript", "yaml", "embedded-template"
       }
       config.setup({
         ensure_installed = langs,
@@ -19,7 +19,7 @@ return {
       })
 
       local autocmd_langs = {
-        "lua", "html", "css", "ruby", "vue", "vimdoc", "vim", "sql"
+        "lua", "html", "css", "ruby", "vue", "vimdoc", "vim", "sql", "embedded-template"
       }
 
       vim.api.nvim_create_autocmd('FileType', {
