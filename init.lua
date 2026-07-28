@@ -45,4 +45,4 @@ require("lazy").setup({
 
 vim.cmd("colorscheme wildcharm")
 
-require("lsp")
+-- require("lsp")
