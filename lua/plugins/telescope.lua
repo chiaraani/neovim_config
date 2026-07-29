@@ -3,24 +3,34 @@ return {
     'princejoogie/dir-telescope.nvim',
     dependencies = { 'nvim-telescope/telescope.nvim' },
     config = function()
-        require('dir-telescope').setup({
-            -- These are the default options, you can customize them
-            hidden = true,
-            no_ignore = false,
-            show_preview = true,
-            follow_symlinks = false,
-        })
+      require('dir-telescope').setup({
+        -- These are the default options, you can customize them
+        hidden = true,
+        no_ignore = false,
+        show_preview = true,
+        follow_symlinks = false,
+      })
     end
   },
   {
     'nvim-telescope/telescope-ui-select.nvim',
   },
   {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
       require('telescope').setup({
         defaults = {
+          hidden = true,
+          file_ignore_patterns = {
+            "node_modules/.*",
+            ".gem_rbs_collection/.*",
+            "package%-lock.json",
+            "lazy%-lock.json",
+            "Gemfile.lock",
+            "tmp/.*",
+            ".git/.*",
+          },
           vimgrep_arguments = {
             'rg',
             '--color=never',
@@ -29,14 +39,7 @@ return {
             '--line-number',
             '--column',
             '--smart-case',
-            '--hidden',
-            '--glob', '!.git/**',
-          },
-        },
-        pickers = {
-          find_files = {
-            hidden = true,
-            find_command = { 'rg', '--files', '--hidden', '--glob', '!.git/**' },
+            '--glob'
           },
         },
       })
