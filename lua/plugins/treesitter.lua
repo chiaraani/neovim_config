@@ -6,7 +6,7 @@ return {
       local config = require("nvim-treesitter.config")
 
       local langs = {
-        "lua", "ruby", "vue", "vimdoc", "vim", "sql", "javascript", "yaml", "embedded-template"
+        "lua", "ruby", "vue", "vimdoc", "vim", "sql", "javascript", "embedded-template"
       }
 
       config.setup({
