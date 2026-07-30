@@ -11,7 +11,7 @@ return {
       })
 
       vim.lsp.enable('vue_ls')
-      vim.lsp.enable('eslint')
+      -- vim.lsp.enable('eslint')
       vim.lsp.enable('yamlls')
       vim.lsp.enable('solargraph')
       -- vim.lsp.enable('rubocop')
